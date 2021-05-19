@@ -1,38 +1,341 @@
-.App {
-  text-align: center;
+:root {
+  --violet-light: rgba(162, 0, 213, 0.4);
+  --violet-dark: #1a0022;
+  --violet-scroll: rgba(162, 0, 213, 0.3);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  background: var(--violet-dark);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Layout */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10rem auto;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--violet-light);
+  z-index: 10;
+  background: var(--violet-dark);
+}
+
+.main {
+  color: #fff;
+  padding: 0;
+}
+
+.main::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+.main::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.main::-webkit-scrollbar-thumb {
+  background-color: var(--violet-scroll);
+  outline: 1px solid var(--violet-light);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 34rem auto;
+    grid-template-rows: 1fr;
+  }
+  .main {
+    overflow-y: hidden; /* scroll */
+    padding: 0;
+    /* overflow-x: hidden; */
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--violet-light);
+    border-bottom: none;
+    position: relative;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Card */
+
+.profile {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.picture {
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: nwse-resize;
+  user-select: none;
 }
 
-@keyframes App-logo-spin {
-  from {
+.picture > img {
+  /* TODO: margin-top will change depending on which image [nasa, museum, silhouette] */
+  width: 100%;
+  margin-top: -1rem;
+  transition: all 0.5s;
+}
+
+.picture > img:hover {
+  width: 130%;
+  margin-top: -4rem;
+  margin-left: 0rem;
+  filter: contrast(1.05);
+  image-rendering: pixelated;
+  /* mix-blend-mode: soft-light; */
+}
+
+.card__heading {
+  color: #fff;
+  font-size: 2rem;
+  padding: 0;
+  text-align: center;
+  user-select: none;
+  margin: 2rem 2rem;
+}
+
+.card__heading--light {
+  font-weight: 200;
+}
+
+.card__heading--bold {
+  font-weight: 400;
+}
+
+.social {
+  display: none;
+}
+
+.profile .svg {
+  width: 20px;
+  height: 20px;
+  margin: 0.25rem 0.01rem;
+}
+
+@media screen and (min-width: 768px) {
+  .profile {
+    display: block;
+    margin-top: -10rem;
+  }
+  .picture {
+    width: 175px;
+    height: 175px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .picture > img {
+    /* TODO: margin-top will change depending on which image [nasa, museum, silhouette] */
+    width: 100%;
+    margin-top: -3rem;
+  }
+  .card__heading {
+    color: #fff;
+    font-size: 2rem;
+    padding: 0;
+    text-align: center;
+    user-select: none;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile .svg {
+    width: 20px;
+    height: 20px;
+    padding: 0 0.25rem;
+  }
+}
+
+/* Space Art */
+
+.hero {
+  display: flex;
+  opacity: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+#canvas {
+  background: var(--violet-dark);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -10;
+}
+
+.astronaut {
+  align-self: flex-start;
+  animation: wobble 5s infinite linear;
+  bottom: 10rem;
+  left: -5rem;
+  position: absolute;
+  width: 130%;
+}
+
+@keyframes wobble {
+  0% {
     transform: rotate(0deg);
+    transform-origin: center center;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    transform: rotate(0.5deg);
+    transform-origin: center center;
   }
+}
+
+.rocket {
+  position: absolute;
+  bottom: 15rem;
+  left: 7rem;
+  font-size: 4rem;
+  opacity: 0.2;
+}
+
+#tsparticles {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
+    /* height: 100vh; */
+  }
+
+  #canvas {
+    background: var(--violet-dark);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -10;
+  }
+
+  #tsparticles {
+    display: block;
+    height: 50vh;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    z-index: -10;
+    opacity: 1;
+    /* border: 1px solid red; */
+  }
+
+  .astronaut {
+    align-self: flex-start;
+    animation: wobble 5s infinite linear;
+    bottom: 0;
+    left: -4rem;
+    position: absolute;
+    width: 110%;
+  }
+
+  @keyframes wobble {
+    0% {
+      transform: rotate(0deg);
+      transform-origin: center center;
+    }
+    50% {
+      transform: rotate(0.1deg);
+      transform-origin: center center;
+    }
+  }
+
+  .rocket {
+    position: absolute;
+    bottom: 15rem;
+    left: 7rem;
+    font-size: 4rem;
+    opacity: 0.2;
+  }
+}
+/* Arrows */
+
+.arrow {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 50% 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.arrow-first {
+  animation: arrow-movement 2s ease-in-out infinite;
+}
+.arrow-second {
+  animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+}
+
+.arrow:before {
+  transform: rotate(45deg) translateX(-23%);
+  transform-origin: top left;
+}
+
+.arrow:after {
+  transform: rotate(-45deg) translateX(23%);
+  transform-origin: top right;
+}
+
+@keyframes arrow-movement {
+  0% {
+    opacity: 0;
+    top: 45%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Skills */
+
+.section__content {
+  height: 87vh;
+  padding: 4rem;
+  border: 1px solid red;
 }
