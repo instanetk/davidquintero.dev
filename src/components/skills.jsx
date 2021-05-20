@@ -29,13 +29,12 @@ const Skills = () => {
               These are some of the technologies I am able to leverage in engineering apps that deliver value to their
               intended audience and become important business assets.
             </p>
-            <TypeWriter text="Below we explore the application of some of these technologies in a few case studies" />
+            <TypeWriter
+              className="text"
+              text="Below we explore the application of some of these technologies in a few case studies"
+            />
           </div>
           <div className="stack">
-            {/* <div>
-              <img src={JS} alt="JavaScript" />
-              <p>ES6</p>
-            </div> */}
             <Tippy content="ES6" placement="bottom">
               <img src={JS} alt="JavaScript" />
             </Tippy>
