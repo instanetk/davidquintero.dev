@@ -139,7 +139,7 @@ body {
 @media screen and (min-width: 768px) {
   .profile {
     display: block;
-    margin-top: -10rem;
+    margin-top: 0rem;
   }
   .picture {
     width: 175px;
@@ -335,7 +335,97 @@ body {
 /* Skills */
 
 .section__content {
-  height: 87vh;
+  height: 90vh;
   padding: 4rem;
-  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid yellow; */
+}
+
+.section__content--middle {
+  /* border: 1px solid red; */
+  width: 100%;
+  font-size: 1.9rem;
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  align-items: center;
+  user-select: none;
+}
+
+.section__content--middle h2 {
+  margin: 0;
+}
+
+.text p {
+  line-height: 1.4;
+  opacity: 0.95;
+}
+
+.stack {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 2rem;
+  row-gap: 4.2rem;
+  justify-items: center;
+  /* place-content: center; */
+  /* align-items: center; */
+  /* border: 1px solid yellow; */
+}
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: 10; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.spin {
+  animation: atom infinite 50s linear;
+  margin: 0;
+}
+
+@keyframes atom {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tippy-box {
+  background-color: var(--violet-light);
+}
+
+.tippy-arrow {
+  color: var(--violet-light);
 }
