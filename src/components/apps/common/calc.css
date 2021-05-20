@@ -1,0 +1,145 @@
+#calculator {
+  background-color: #222;
+  font-family: 'HelveticaNeue-Light', Helvetica, sans-serif;
+  font-weight: 100;
+  width: 310px;
+  height: 490px;
+  border-radius: 20px;
+  display: inline-flex;
+  flex-direction: column-reverse;
+  flex-flow: row wrap;
+  padding-top: 15px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+#display {
+  background-color: #222;
+  width: 310px;
+  height: 70px;
+  display: flex;
+  align-content: flex-end;
+}
+.result {
+  font-size: 60px;
+  color: #fff;
+  /* text-shadow: 1px 1px 3px rgb(224, 0, 224); */
+  text-align: right;
+  width: 310px;
+  height: 60px;
+  padding-right: 20px;
+  /* background-color: fuchsia; */
+}
+.result-nine {
+  font-size: 52px;
+  text-align: right;
+  width: 310px;
+  height: 60px;
+  padding-right: 20px;
+}
+.result-eleven {
+  font-size: 44px;
+  text-align: right;
+  width: 310px;
+  height: 60px;
+  padding-right: 20px;
+}
+
+#functions {
+  /* background-color: aqua; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 210px;
+  height: 70px;
+  margin-left: 15px;
+}
+
+#percent,
+#sign,
+#clear {
+  background-color: #888;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 5px;
+  font-size: 30px;
+}
+
+#operators {
+  /* background-color: fuchsia; */
+  width: 70px;
+  height: 395px;
+  /* margin-left: -20px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#equals,
+#add,
+#subtract,
+#multiply,
+#divide {
+  background-color: orange;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 5px;
+  font-size: 38px;
+}
+
+#numbers {
+  /* background-color: green; */
+  flex-direction: row;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 210px;
+  height: 320px;
+  margin-top: -325px;
+  margin-left: 15px;
+}
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine,
+#decimal {
+  background-color: #333;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 5px;
+  font-size: 38px;
+}
+#zero {
+  background-color: #333;
+  width: 130px !important;
+  height: 60px;
+  border-radius: 50px;
+  font-size: 38px;
+  margin: 5px;
+  text-align: left;
+}
+.zero {
+  padding: 6px 0 0 20px;
+}
+.button {
+  padding-top: 6px;
+  text-align: center;
+}
+
+.buttonfunc {
+  padding-top: 12px;
+  text-align: center;
+}
+.dot {
+  margin-bottom: 10px;
+  text-align: center;
+}

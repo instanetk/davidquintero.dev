@@ -18,11 +18,11 @@ import TailwindCSS from '../svg/stack/tailwind-css-seeklogo.com.svg';
 const Skills = () => {
   return (
     <section className="section">
-      <div className="section__content">
-        <div className="section__content--middle">
+      <div className="section__skills">
+        <div className="section__skills--middle">
           <div className="text">
             <h2>
-              Hello... <span className="wave">👋🏻</span>
+              Hello...<span className="wave">👋🏻</span>
             </h2>
             <p>I am an emerging designer and full stack web developer.</p>
             <p>

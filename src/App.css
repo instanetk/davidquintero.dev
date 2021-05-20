@@ -141,7 +141,7 @@ body {
 @media screen and (min-width: 768px) {
   .profile {
     display: block;
-    margin-top: 0rem;
+    margin-top: -4rem;
   }
   .picture {
     width: 175px;
@@ -336,7 +336,7 @@ body {
 
 /* Skills */
 
-.section__content {
+.section__skills {
   height: 90vh;
   padding: 4rem;
   display: flex;
@@ -347,30 +347,30 @@ body {
   /* border: 1px solid yellow; */
 }
 
-.section__content--middle {
+.section__skills--middle {
   /* border: 1px solid red; */
   width: 100%;
   font-size: 1.9rem;
   display: grid;
-  grid-template-columns: 0.9fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   user-select: none;
 }
 
-.section__content--middle h2 {
+.section__skills--middle h2 {
   margin: 0;
 }
 
 .text p {
   line-height: 1.4;
-  opacity: 0.95;
+  opacity: 1;
 }
 
 .stack {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding-left: 2rem;
-  row-gap: 4.2rem;
+  padding: 6rem 0 0 3rem;
+  row-gap: 5rem;
   justify-items: center;
   cursor: crosshair;
 }
@@ -445,4 +445,32 @@ body {
 
 .tippy-arrow {
   color: var(--violet-light);
+}
+
+/* Portfolio */
+
+.section__portfolio {
+  align-items: center;
+  /* border: 1px solid yellow; */
+  display: flex;
+  font-family: 'Source Code Pro', monospace;
+  height: 72vh;
+  justify-content: center;
+  padding: 10rem;
+}
+
+.section__portfolio--middle {
+  align-items: center;
+  /* border: 1px solid red; */
+  column-gap: 6rem;
+  display: grid;
+  font-size: 1.9rem;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+  width: 100vw;
+  user-select: none;
+}
+
+.section__portfolio--middle h2 {
+  margin: 0;
 }
