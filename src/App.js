@@ -3,6 +3,7 @@ import Card from './components/card';
 import Hero from './components/hero';
 import Skills from './components/skills';
 import Calc from './components/calc';
+import Clock from './components/clock';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
           <Hero />
           <Skills />
           <Calc />
+          <Clock />
         </div>
       </main>
     </div>

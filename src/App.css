@@ -447,9 +447,9 @@ body {
   color: var(--violet-light);
 }
 
-/* Portfolio */
+/* Calculator */
 
-.section__portfolio {
+.section__calculator {
   align-items: center;
   /* border: 1px solid yellow; */
   display: flex;
@@ -459,7 +459,7 @@ body {
   padding: 10rem;
 }
 
-.section__portfolio--middle {
+.section__calculator--middle {
   align-items: center;
   /* border: 1px solid red; */
   column-gap: 6rem;
@@ -471,7 +471,7 @@ body {
   user-select: none;
 }
 
-.section__portfolio--middle h2 {
+.section__calculator--middle h2 {
   margin: 0;
 }
 
@@ -479,4 +479,38 @@ body {
   opacity: 0.9;
   transform: scale(0.98);
   margin-top: -1rem;
+}
+
+/* Pomodoro */
+
+.section__pomodoro {
+  /* border: 1px solid yellow; */
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding: 4rem 10rem;
+}
+
+.section__pomodoro--middle {
+  /* align-items: center; */
+  /* border: 1px solid red; */
+  display: grid;
+  font-size: 1.9rem;
+  /* grid-template-columns: 1fr; */
+  grid-template-rows: 1fr 2fr;
+  user-select: none;
+  /* height: 100vh; */
+}
+
+.section__pomodoro--middle h2,
+p {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.clock {
+  /* transform: scale(0.9); */
+  margin: 0;
+  justify-self: center;
+  /* border: 1px solid greenyellow; */
+  opacity: 1;
 }
