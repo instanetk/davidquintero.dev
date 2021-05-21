@@ -2,7 +2,7 @@ import './App.css';
 import Card from './components/card';
 import Hero from './components/hero';
 import Skills from './components/skills';
-import Portfolio from './components/portfolio';
+import Calc from './components/calc';
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
         <div id="fullpage">
           <Hero />
           <Skills />
-          <Portfolio />
+          <Calc />
         </div>
       </main>
     </div>

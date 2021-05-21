@@ -42,10 +42,22 @@
 </body>
 <script src="fullpage.js"></script>
 <script>
+  let skillsType = false;
   new fullpage('#fullpage', {
     //options here
     autoScrolling: true,
     scrollHorizontally: true,
+
+    onLeave: function (section, origin, destination, direction) {
+      var loadedSlide = this;
+
+      if (origin.index == 1) {
+        console.log(origin.index)
+        skillsType = true;
+
+      }
+
+    }
   });
 </script>
 <script src="stars.js"></script>

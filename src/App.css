@@ -474,3 +474,9 @@ body {
 .section__portfolio--middle h2 {
   margin: 0;
 }
+
+.calc {
+  opacity: 0.9;
+  transform: scale(0.98);
+  margin-top: -1rem;
+}
