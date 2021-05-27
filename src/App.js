@@ -4,6 +4,7 @@ import Hero from './components/hero';
 import Skills from './components/skills';
 import Calc from './components/calc';
 import Clock from './components/clock';
+import Fullstack from './components/fullstack';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Skills />
           <Calc />
           <Clock />
+          <Fullstack />
         </div>
       </main>
     </div>

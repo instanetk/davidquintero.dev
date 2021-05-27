@@ -67,6 +67,7 @@
   border-radius: 50%;
   margin: 5px;
   font-size: 30px;
+  cursor: pointer;
 }
 
 #operators {
@@ -89,6 +90,7 @@
   border-radius: 50%;
   margin: 5px;
   font-size: 38px;
+  cursor: pointer;
 }
 
 #numbers {
@@ -117,6 +119,7 @@
   border-radius: 50%;
   margin: 5px;
   font-size: 38px;
+  cursor: pointer;
 }
 #zero {
   background-color: #333;
@@ -126,6 +129,7 @@
   font-size: 38px;
   margin: 5px;
   text-align: left;
+  cursor: pointer;
 }
 .zero {
   padding: 6px 0 0 20px;

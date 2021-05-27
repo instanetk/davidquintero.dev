@@ -486,7 +486,7 @@ body {
 .section__pomodoro {
   /* border: 1px solid yellow; */
   display: flex;
-  height: 100vh;
+  height: 90vh;
   justify-content: center;
   padding: 4rem 10rem;
 }
@@ -513,4 +513,38 @@ p {
   justify-self: center;
   /* border: 1px solid greenyellow; */
   opacity: 1;
+}
+
+/* Fullstack Intro */
+
+.section__fullstack {
+  /* border: 1px solid yellow; */
+  display: flex;
+  height: 89vh;
+  justify-content: center;
+  padding: 4rem 4rem;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.section__fullstack--middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  /* border: 1px solid red; */
+  display: grid;
+  font-size: 1.9rem;
+  /* grid-template-rows: 1fr 2fr; */
+  user-select: none;
+}
+
+.section__fullstack--text {
+  margin-top: -14rem;
+}
+
+.launch {
+  background: url(./svg/launch.svg) no-repeat;
+  background-size: cover;
+  background-position: 50% 60%;
+  background-size: 250%;
+  height: 100vh;
 }
