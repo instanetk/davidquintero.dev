@@ -8,9 +8,9 @@ import Fullstack from './components/fullstack';
 
 const App = () => {
   return (
-    <div class="container">
+    <div className="container">
       <Card />
-      <main class="main">
+      <main className="main">
         <div id="fullpage">
           <Hero />
           <Skills />

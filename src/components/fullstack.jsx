@@ -1,5 +1,3 @@
-// import missioncontrol from '../svg/missioncontrol.svg';
-import launch from '../svg/launch.svg';
 import TypeWriter from './typewriter';
 
 const Fullstack = () => {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css'; // optional
 import TypeWriter from './typewriter';
@@ -16,9 +16,6 @@ import npm from '../svg/stack/icons8-npm.svg';
 import TailwindCSS from '../svg/stack/tailwind-css-seeklogo.com.svg';
 
 const Skills = () => {
-  console.log(window.skillsType);
-  let type = window.skillsType;
-
   return (
     <section className="section">
       <div className="section__skills">

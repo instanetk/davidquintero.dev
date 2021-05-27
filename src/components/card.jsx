@@ -6,30 +6,30 @@ import NetworkParticles from './network';
 
 const Card = () => {
   return (
-    <div class="card">
+    <div className="card">
       <NetworkParticles />
-      <div class="profile">
-        <div class="picture">
+      <div className="profile">
+        <div className="picture">
           <img src={Avatar} alt="NASA avatar of David's reflection" />
         </div>
-        <h1 class="card__heading">
-          <span class="card__heading--light">david</span>
-          <span class="card__heading--bold">quintero</span>
+        <h1 className="card__heading">
+          <span className="card__heading--light">david</span>
+          <span className="card__heading--bold">quintero</span>
         </h1>
-        <div class="social">
+        <div className="social">
           <span>
             <a href="https://dev.to/netk" target="_blank" rel="noreferrer">
-              <img class="svg" src={dev} alt="dev.to logo" />
+              <img className="svg" src={dev} alt="dev.to logo" />
             </a>
           </span>
           <span>
             <a href="https://github.com/instanetk" target="_blank" rel="noreferrer">
-              <img class="svg" src={github} alt="github logo" />
+              <img className="svg" src={github} alt="github logo" />
             </a>
           </span>
           <span>
             <a href="https://www.linkedin.com/in/davidquintero/" target="_blank" rel="noreferrer">
-              <img class="svg" src={linkedin} alt="linkedin logo" />
+              <img className="svg" src={linkedin} alt="linkedin logo" />
             </a>
           </span>
         </div>
