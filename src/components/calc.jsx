@@ -1,5 +1,5 @@
 import Calculator from './apps/Calculator';
-import TypeWriter from './typewriter';
+import TypeWriter from './Typewriter';
 
 const Calc = () => {
   return (

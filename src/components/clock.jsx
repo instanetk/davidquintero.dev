@@ -1,5 +1,5 @@
 import Pomodoro from './apps/Pomodoro';
-import TypeWriter from './typewriter';
+import TypeWriter from './Typewriter';
 
 const Clock = () => {
   return (

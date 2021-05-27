@@ -2,7 +2,7 @@ import Avatar from '../images/nasa.jpg';
 import dev from '../svg/dev.svg';
 import github from '../svg/github.svg';
 import linkedin from '../svg/linkedin.svg';
-import NetworkParticles from './network';
+import NetworkParticles from './Network';
 
 const Card = () => {
   return (
