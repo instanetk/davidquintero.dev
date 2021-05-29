@@ -42,7 +42,7 @@ const HomeWorks = () => {
             </div>
           </div>
           <div className="homeworks__image">
-            <iframe src="https://homeworks.davidquintero.dev/" className="homeworks__iframe" />
+            <iframe title="HomeWorks" src="https://homeworks.davidquintero.dev/" className="homeworks__iframe" />
           </div>
         </div>
       </div>

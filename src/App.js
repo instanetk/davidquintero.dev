@@ -6,6 +6,7 @@ import Calc from './components/Calc';
 import Clock from './components/Clock';
 import Fullstack from './components/Fullstack';
 import HomeWorks from './components/HomeWorks';
+import MissionControl from './components/MissionControl';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Clock />
           <Fullstack />
           <HomeWorks />
+          <MissionControl />
         </div>
       </main>
     </div>
