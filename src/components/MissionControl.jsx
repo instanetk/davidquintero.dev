@@ -12,10 +12,12 @@ const MissionControl = () => {
               <TypeWriter text="It's one small step for man" />
             </h2>
             <p>
-              We've reached the end of this presentation and the beginning of this journey. Thank you for taking the
-              time to get acquainted with my work.{' '}
+              We've reached the end of this presentation. Thank you for taking the time to get acquainted with my work.{' '}
             </p>
-            <a href="https://static.davidquintero.dev/resume.pdf">> Download Résumé</a>
+            <a href="https://static.davidquintero.dev/resume.pdf" target="_blank" rel="noreferrer">
+              > Download résumé
+            </a>
+            {/* <p className="text--bold">> davidq@wavefunction.ai</p> */}
           </div>
         </div>
       </div>
