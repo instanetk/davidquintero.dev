@@ -25,7 +25,7 @@ const HomeWorks = () => {
             <p>Detailed description of user stories are available in its GitHub repositories.</p>
             <div className="launch-container">
               <a href="https://homeworks.davidquintero.dev" className="launch-app" target="_blank" rel="noreferrer">
-                Launch App <span class="launch-app-rocket">🚀</span>
+                Launch App <span className="launch-app-rocket">🚀</span>
               </a>
             </div>
             <div className="homeworks-repos">
