@@ -35,6 +35,10 @@ body {
   text-decoration: underline;
 }
 
+.text--skills {
+  min-height: 8.3rem;
+}
+
 h2 {
   min-height: 3.6rem;
 }
