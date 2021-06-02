@@ -14,7 +14,7 @@ const MissionControl = () => {
             <p>
               We've reached the end of this presentation. Thank you for taking the time to get acquainted with my work.{' '}
             </p>
-            <a href="https://static.davidquintero.dev/resume.pdf" target="_blank" rel="noreferrer">
+            <a href="https://static.davidquintero.dev/resume.pdf" target="_blank" rel="noreferrer" download>
               > Download résumé
             </a>
             {/* <p className="text--bold">> davidq@wavefunction.ai</p> */}
