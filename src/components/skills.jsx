@@ -15,7 +15,15 @@ import Docker from '../svg/stack/icons8-docker.svg';
 import npm from '../svg/stack/icons8-npm.svg';
 import TailwindCSS from '../svg/stack/tailwind-css-seeklogo.com.svg';
 
-const Skills = () => {
+const Skills = ({ state }) => {
+  let playTypeWriter;
+
+  if (state.destination === undefined) {
+    playTypeWriter = false;
+  } else if (state.destination.index === 1) {
+    playTypeWriter = true;
+  }
+
   return (
     <section className="section">
       <div className="section__skills">
@@ -29,11 +37,12 @@ const Skills = () => {
               These are some of the technologies I am able to leverage in engineering apps that deliver value to their
               intended audience and become important business assets.
             </p>
-
-            <TypeWriter
-              className="text"
-              text="Below we explore the application of some of these technologies in a few case studies"
-            />
+            {playTypeWriter ? (
+              <TypeWriter
+                className="text"
+                text="Below we explore the application of some of these technologies in a few case studies"
+              />
+            ) : null}
           </div>
           <div className="stack">
             <Tippy content="ES6" placement="bottom">

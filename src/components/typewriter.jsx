@@ -12,7 +12,7 @@ const TypeWriter = ({ text }) => {
       }}
       onInit={(typewriter) => {
         typewriter
-          .pauseFor(1000)
+
           .typeString(text)
 
           .start();
