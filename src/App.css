@@ -35,6 +35,10 @@ body {
   text-decoration: underline;
 }
 
+h2 {
+  min-height: 3.6rem;
+}
+
 /* Layout */
 
 .container {
