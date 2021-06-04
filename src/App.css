@@ -13,8 +13,7 @@ html {
 body {
   background: var(--violet-dark);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
-    'Helvetica Neue', sans-serif;
+  font-family: 'Source Code Pro', monospace;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,10 +32,6 @@ body {
 
 .text--underline {
   text-decoration: underline;
-}
-
-.text--skills {
-  min-height: 8.3rem;
 }
 
 h2 {
@@ -60,6 +55,8 @@ h2 {
   border-bottom: 1px solid var(--violet-light);
   z-index: 10;
   background: var(--violet-dark);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
 }
 
 .main {
@@ -78,6 +75,11 @@ h2 {
 .main::-webkit-scrollbar-thumb {
   background-color: var(--violet-scroll);
   outline: 1px solid var(--violet-light);
+}
+
+/* Class from fullpage.js | default: middle |  mobile view */
+.fp-tableCell {
+  vertical-align: top;
 }
 
 @media screen and (min-width: 768px) {
@@ -361,13 +363,12 @@ h2 {
 /* Skills */
 
 .section__skills {
-  height: 90vh;
+  height: 72vh;
   padding: 0 4rem;
   display: flex;
   /* justify-content: center; */
   /* align-items: center; */
   /* font-family: 'Inconsolata', monospace; */
-  font-family: 'Source Code Pro', monospace;
   /* border: 1px solid yellow; */
 }
 
@@ -387,6 +388,7 @@ h2 {
 
 .text {
   /* border: 1px solid greenyellow; */
+  padding-top: 2rem;
 }
 
 .text p {
@@ -394,10 +396,14 @@ h2 {
   opacity: 1;
 }
 
+.text--skills {
+  min-height: 4.2rem;
+}
+
 .stack {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: -15rem;
+  margin-top: -3rem;
   row-gap: 1rem;
   justify-items: center;
 }
@@ -451,6 +457,9 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
+  .section__skills {
+    height: 100vh;
+  }
   .section__skills--middle {
     /* border: 1px solid red; */
     font-size: 2rem;
@@ -465,9 +474,17 @@ h2 {
     margin: 0;
   }
 
+  .text {
+    padding-top: 0;
+  }
+
   .text p {
     line-height: 1.4;
     opacity: 1;
+  }
+
+  .text--skills {
+    min-height: 5.6rem;
   }
 
   .stack {
@@ -477,42 +494,71 @@ h2 {
     row-gap: 5rem;
     justify-items: center;
     cursor: crosshair;
-    margin-top: 0rem;
+    margin-top: -5rem;
   }
 }
 
 /* Calculator */
 
 .section__calculator {
-  align-items: center;
   /* border: 1px solid yellow; */
   display: flex;
-  font-family: 'Source Code Pro', monospace;
-  height: 72vh;
+  height: 61vh;
   justify-content: center;
-  padding: 10rem;
 }
 
 .section__calculator--middle {
-  align-items: center;
   /* border: 1px solid red; */
-  column-gap: 6rem;
-  display: grid;
-  font-size: 1.9rem;
-  grid-template-columns: 1fr 2fr;
-  height: 100vh;
-  width: 100vw;
-  user-select: none;
+  display: flex;
+  padding: 0 6.1rem;
+  font-size: 1.3rem;
 }
 
-.section__calculator--middle h2 {
-  margin: 0;
+.slide h2 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .calc {
   opacity: 0.9;
-  transform: scale(0.98);
-  margin-top: -1rem;
+  transform: scale(0.8);
+  margin-top: -4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .section__calculator {
+    align-items: center;
+    /* border: 1px solid yellow; */
+    display: flex;
+    font-family: 'Source Code Pro', monospace;
+    height: 100vh;
+    justify-content: center;
+    padding: 0 10rem;
+  }
+
+  .section__calculator--middle {
+    align-items: center;
+    /* border: 1px solid red; */
+    column-gap: 6rem;
+    display: grid;
+    font-size: 1.9rem;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+    padding: 0;
+  }
+
+  .section__calculator--middle h2 {
+    margin: 0;
+  }
+
+  .calc {
+    opacity: 0.9;
+    transform: scale(0.98);
+    margin-top: -1rem;
+  }
 }
 
 /* Pomodoro */
@@ -623,6 +669,7 @@ p {
   width: 400px;
   height: 650px;
   border-radius: 10px;
+  background: rgba(162, 0, 213, 0.1);
 }
 
 .launch-container {

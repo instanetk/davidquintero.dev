@@ -32,16 +32,14 @@ const Skills = ({ state }) => {
             <h2>
               Hello...<span className="wave">👋🏻</span>
             </h2>
-            <p>I am an emerging designer and full stack web developer.</p>
+            <p className="text--skills">
+              {playTypeWriter ? <TypeWriter text="I am an emerging designer and full stack web developer" /> : null}
+            </p>
             <p>
               These are some of the technologies I am able to leverage in engineering apps that deliver value to their
               intended audience and become important business assets.
             </p>
-            <p className="text--skills">
-              {playTypeWriter ? (
-                <TypeWriter text="Below we explore the application of some of these technologies in a few case studies..." />
-              ) : null}
-            </p>
+            <p>Below we explore the application of some of these technologies in a few case studies...</p>
           </div>
           <div className="stack">
             <Tippy content="ES6" placement="bottom">

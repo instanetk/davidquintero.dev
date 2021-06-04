@@ -4,19 +4,19 @@ import Node from '../svg/stack/icons8-nodejs.svg';
 import Tippy from '@tippyjs/react';
 
 const HomeWorks = ({ state }) => {
-  let playTypeWriter;
+  let isLoaded;
 
   if (state.destination === undefined) {
-    playTypeWriter = false;
+    isLoaded = false;
   } else if (state.destination.index === 5) {
-    playTypeWriter = true;
+    isLoaded = true;
   }
   return (
     <section className="section">
       <div className="section__homeworks">
         <div className="section__homeworks--middle">
           <div className="homeworks__description">
-            <h2>{playTypeWriter ? <TypeWriter text="HomeWorks" /> : null}</h2>
+            <h2>{isLoaded ? <TypeWriter text="HomeWorks" /> : null}</h2>
             <p>This app serves as a lead adquisition and Customer Relationship Management (CRM).</p>
             <p>
               It features use of the <span className="text--bold">Google Maps API</span> to pinpoint and validate
@@ -47,7 +47,9 @@ const HomeWorks = ({ state }) => {
             </div>
           </div>
           <div className="homeworks__image">
-            <iframe title="HomeWorks" src="https://homeworks.davidquintero.dev/" className="homeworks__iframe" />
+            {isLoaded ? (
+              <iframe title="HomeWorks" src="https://homeworks.davidquintero.dev/" className="homeworks__iframe" />
+            ) : null}
           </div>
         </div>
       </div>
