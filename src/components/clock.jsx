@@ -40,6 +40,12 @@ const Clock = ({ state }) => {
           <div className="section__pomodoro">
             <div className="section__pomodoro--middle">
               <PomodoroText />
+              <div class="arrows-pomodoro">
+                <div className="arrows-container">
+                  <div className="arrows arrow-one"></div>
+                  <div className="arrows arrow-two"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

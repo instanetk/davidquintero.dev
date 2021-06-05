@@ -49,9 +49,9 @@ const Calc = ({ state }) => {
               <h2>{playTypeWriter ? <TypeWriter text="React Calculator" /> : null}</h2>
               <div className="calc">
                 <Calculator />
-                <div class="arrows-container arrows-calc">
-                  <div class="arrows arrow-one"></div>
-                  <div class="arrows arrow-two"></div>
+                <div className="arrows-container arrows-calc">
+                  <div className="arrows arrow-one"></div>
+                  <div className="arrows arrow-two"></div>
                 </div>
               </div>
             </div>
