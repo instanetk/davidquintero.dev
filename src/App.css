@@ -702,32 +702,70 @@ h2 {
 .section__fullstack {
   /* border: 1px solid yellow; */
   display: flex;
-  height: 89vh;
+  height: 72vh;
   justify-content: center;
-  padding: 4rem 4rem;
 }
 
 .section__fullstack--middle {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  /* align-items: center; */
   /* border: 1px solid red; */
   display: grid;
-  font-size: 1.9rem;
-  /* grid-template-rows: 1fr 2fr; */
+  font-size: 1.5rem;
+  grid-template-rows: 1fr;
+  padding: 0rem 4rem;
   user-select: none;
 }
 
 .section__fullstack--text {
-  margin-top: -14rem;
+  /* margin-top: -14rem; */
 }
 
 .launch {
   background: url(./svg/launch.svg) no-repeat;
   background-size: cover;
   background-position: 50% 60%;
-  background-size: 250%;
-  height: 100vh;
+  background-size: 200%;
+  height: 50vh;
+  /* border: 1px solid purple; */
+  z-index: -20;
+  margin-top: -11rem;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  .section__fullstack {
+    /* border: 1px solid yellow; */
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    padding: 4rem 4rem;
+  }
+
+  .section__fullstack--middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /* border: 1px solid red; */
+    display: grid;
+    font-size: 1.9rem;
+    /* grid-template-rows: 1fr 2fr; */
+    user-select: none;
+  }
+
+  .section__fullstack--text {
+    margin-top: -14rem;
+  }
+
+  .launch {
+    background: url(./svg/launch.svg) no-repeat;
+    background-size: cover;
+    background-position: 50% 60%;
+    background-size: 250%;
+    height: 100vh;
+    z-index: 0;
+    margin-top: 0rem;
+    opacity: 1;
+  }
 }
 
 /* HomeWorks */
