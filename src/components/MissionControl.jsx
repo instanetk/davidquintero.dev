@@ -23,9 +23,14 @@ const MissionControl = ({ state, api }) => {
             <a href="https://static.davidquintero.dev/resume.pdf" target="_blank" rel="noreferrer" download>
               > Download résumé
             </a>
-            <button onClick={() => api.moveTo(1)}>Click me to move up</button>
+            {/* <button onClick={() => api.moveTo(1)}>Click me to move up</button> */}
 
-            {/* <p className="text--bold">> davidq@wavefunction.ai</p> */}
+            <p className="text--bold">
+              >{' '}
+              <a href="mailto:davidq@wavefunction.ai?subject=Ground Control to Major Tom... 🧑🏻‍🚀">
+                davidq@wavefunction.ai
+              </a>
+            </p>
           </div>
         </div>
       </div>
