@@ -44,11 +44,15 @@ const Calc = ({ state }) => {
       </BrowserView>
       <MobileView>
         <div className="slide">
-          <h2>{playTypeWriter ? <TypeWriter text="React Calculator" /> : null}</h2>
           <div className="section__calculator">
             <div className="section__calculator--middle">
+              <h2>{playTypeWriter ? <TypeWriter text="React Calculator" /> : null}</h2>
               <div className="calc">
                 <Calculator />
+                <div class="arrows-container arrows-calc">
+                  <div class="arrows arrow-one"></div>
+                  <div class="arrows arrow-two"></div>
+                </div>
               </div>
             </div>
           </div>

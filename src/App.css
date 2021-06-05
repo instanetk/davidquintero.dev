@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;600&display=swap');
 
 :root {
   --violet-light: rgba(162, 0, 213, 0.4);
@@ -359,6 +359,49 @@ h2 {
   }
 }
 
+/* Arrows Modifications */
+
+.arrows-container {
+  display: flex;
+  position: relative;
+}
+
+.arrows {
+  padding: 1rem;
+  box-shadow: 2px -2px white inset;
+  transform: rotate(225deg);
+  opacity: 0;
+  position: absolute;
+}
+
+.arrow-one {
+  animation: arrowMovement 2.5s ease-in-out infinite;
+}
+
+.arrow-two {
+  animation: arrowMovement 2.5s 1s ease-in-out infinite;
+}
+
+.arrows-calc {
+  /* border: 1px solid yellow; */
+  opacity: 0.2;
+  margin-top: -6rem;
+}
+
+@keyframes arrowMovement {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    left: 30px;
+    opacity: 0;
+  }
+}
+
 /* Screens */
 /* Skills */
 
@@ -450,6 +493,10 @@ h2 {
 
 .tippy-box {
   background-color: var(--violet-light);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .tippy-arrow {
@@ -503,26 +550,26 @@ h2 {
 .section__calculator {
   /* border: 1px solid yellow; */
   display: flex;
-  height: 61vh;
+  height: 72vh;
   justify-content: center;
 }
 
 .section__calculator--middle {
-  /* border: 1px solid red; */
-  display: flex;
-  padding: 0 6.1rem;
-  font-size: 1.3rem;
+  padding: 0 4rem;
+  font-size: 1.4rem;
 }
 
-.slide h2 {
+.section__calculator--middle h2 {
   font-size: 2.3rem;
   font-weight: bold;
   text-align: center;
 }
 
 .calc {
+  display: flex;
+  align-items: center;
   opacity: 0.9;
-  transform: scale(0.8);
+  transform: scale(0.85);
   margin-top: -4rem;
 }
 
@@ -531,7 +578,6 @@ h2 {
     align-items: center;
     /* border: 1px solid yellow; */
     display: flex;
-    font-family: 'Source Code Pro', monospace;
     height: 100vh;
     justify-content: center;
     padding: 0 10rem;
@@ -539,7 +585,6 @@ h2 {
 
   .section__calculator--middle {
     align-items: center;
-    /* border: 1px solid red; */
     column-gap: 6rem;
     display: grid;
     font-size: 1.9rem;
@@ -551,7 +596,9 @@ h2 {
   }
 
   .section__calculator--middle h2 {
-    margin: 0;
+    font-size: 2.8rem;
+    text-align: left;
+    /* border: 1px solid red; */
   }
 
   .calc {
@@ -582,12 +629,9 @@ h2 {
   /* height: 100vh; */
 }
 
-.section__pomodoro--middle h2,
-p {
-  font-family: 'Source Code Pro', monospace;
-}
-
 .clock {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
   /* transform: scale(0.9); */
   margin: 0;
   justify-self: center;
@@ -603,7 +647,6 @@ p {
   height: 89vh;
   justify-content: center;
   padding: 4rem 4rem;
-  font-family: 'Source Code Pro', monospace;
 }
 
 .section__fullstack--middle {

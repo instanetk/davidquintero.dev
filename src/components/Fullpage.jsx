@@ -16,6 +16,7 @@ const Fullpage = () => (
     afterLoad={(origin, destination, direction) => {
       console.log('afterLoad event', { origin, destination, direction });
     }}
+    controlArrows={false}
     render={({ state, fullpageApi }) => {
       console.log('state: ', state);
       console.warn(fullpageApi);
