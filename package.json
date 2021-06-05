@@ -1,6 +1,7 @@
 {
-  "name": "cra",
-  "version": "0.1.0",
+  "name": "David Quintero / Developer Portfolio",
+  "version": "1.0",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
