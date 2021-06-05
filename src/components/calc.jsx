@@ -1,7 +1,7 @@
 import React from 'react';
 import Calculator from './apps/Calculator';
 import TypeWriter from './Typewriter';
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { BrowserView, MobileView } from 'react-device-detect';
 
 const Calc = ({ state }) => {
   let playTypeWriter;
