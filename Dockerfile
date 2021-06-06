@@ -16,9 +16,9 @@ RUN npm run build
 # production environment
 FROM nginx:stable-alpine
 
-COPY --from=react-build /usr/src/app/build /usr/share/nginx/html
+COPY --from=dotdev-build /usr/src/app/build /usr/share/nginx/html
 
-COPY --from=react-build /usr/src/app/nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=dotdev-build /usr/src/app/nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 3118
 
