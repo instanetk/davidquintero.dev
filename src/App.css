@@ -990,7 +990,7 @@ h2 {
     display: flex;
     height: 100vh;
     justify-content: center;
-    padding: 4rem 4rem;
+    padding: 4rem 0rem;
     font-family: 'Source Code Pro', monospace;
     /* background: url(./svg/launchpad.svg) no-repeat;
     background-size: cover;
@@ -1001,6 +1001,7 @@ h2 {
   .section__mission-control--middle {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
     font-size: 1.9rem;
     width: 100vw;
     user-select: none;
