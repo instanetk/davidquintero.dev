@@ -13,6 +13,13 @@ COPY . .
 
 RUN npm run build
 
-EXPOSE 3000
+# production environment
+FROM nginx:stable-alpine
 
-CMD ["npm", "run", "start"]
+COPY --from=react-build /usr/src/app/build /usr/share/nginx/html
+
+COPY --from=react-build /usr/src/app/nginx.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 3118
+
+CMD ["nginx", "-g", "daemon off;"]
