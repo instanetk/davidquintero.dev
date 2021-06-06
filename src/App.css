@@ -412,7 +412,7 @@ h2 {
 /* Skills */
 
 .section__skills {
-  height: 72vh;
+  height: 100vh;
   padding: 0 4rem;
   display: flex;
   /* justify-content: center; */
@@ -452,9 +452,10 @@ h2 {
 .stack {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: -3rem;
+  margin-top: 0rem;
   row-gap: 1rem;
   justify-items: center;
+  align-self: start;
 }
 
 .stack img {
@@ -548,6 +549,7 @@ h2 {
     justify-items: center;
     cursor: crosshair;
     margin-top: -5rem;
+    align-self: center;
   }
 }
 
@@ -556,7 +558,7 @@ h2 {
 .section__calculator {
   /* border: 1px solid yellow; */
   display: flex;
-  height: 72vh;
+  height: 100vh;
   justify-content: center;
 }
 
@@ -619,7 +621,7 @@ h2 {
 .section__pomodoro {
   /* border: 1px solid red; */
   display: flex;
-  height: 72vh;
+  height: 100vh;
   justify-content: center;
 }
 
@@ -628,7 +630,7 @@ h2 {
   font-size: 1.5rem;
   /* display: grid; */
   /* grid-template-rows: 1fr 1fr; */
-  padding: 0rem 4rem;
+  padding: 2rem 4rem;
   /* align-items: center; */
 }
 
@@ -646,8 +648,8 @@ h2 {
   /* border: 1px solid greenyellow; */
   opacity: 1;
   user-select: none;
-  align-self: center;
-  /* justify-self: center; */
+  align-self: start;
+  margin-top: 6rem;
 }
 
 .arrows-pomodoro {
@@ -702,7 +704,7 @@ h2 {
 .section__fullstack {
   /* border: 1px solid yellow; */
   display: flex;
-  height: 72vh;
+  height: 100vh;
   justify-content: center;
 }
 
@@ -733,7 +735,7 @@ h2 {
   height: 50vh;
   /* border: 1px solid purple; */
   z-index: -20;
-  margin-top: -11rem;
+  margin-top: -55rem;
   opacity: 0.5;
 }
 
@@ -782,7 +784,7 @@ h2 {
 .section__homeworks {
   /* border: 1px solid yellow; */
   display: flex;
-  height: 72vh;
+  height: 100vh;
   justify-content: center;
 }
 
@@ -942,7 +944,7 @@ h2 {
 .section__mission-control {
   /* border: 1px solid yellow; */
   display: flex;
-  height: 72vh;
+  height: 100vh;
   justify-content: center;
   font-family: 'Source Code Pro', monospace;
   /* background: url(./svg/launchpad.svg) no-repeat;
@@ -953,7 +955,7 @@ h2 {
 
 .section__mission-control--middle {
   display: grid;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 20vh 1fr;
   font-size: 1.9rem;
   /* width: 100vw; */
   user-select: none;

@@ -23,3 +23,4 @@ COPY --from=dotdev-build /usr/src/app/nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 3118
 
 CMD ["nginx", "-g", "daemon off;"]
+
