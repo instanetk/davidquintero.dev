@@ -4,6 +4,8 @@
   --violet-light: rgba(162, 0, 213, 0.4);
   --violet-dark: #1a0022;
   --violet-scroll: rgba(162, 0, 213, 0.3);
+  --height-mobile: 100vh;
+  --height-desktop: 100vh;
 }
 
 html {
