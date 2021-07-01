@@ -18,7 +18,7 @@ const MissionControl = ({ state, api }) => {
 
           <div className="mission-control--text">
             <h2>{playTypeWriter ? <TypeWriter text="It's one small step for man" /> : null}</h2>
-            <p>
+            <p className="mission-control--end">
               We've reached the end of this presentation. Thank you for taking the time to get acquainted with my work.{' '}
             </p>
             <a href="https://static.davidquintero.dev/resume.pdf" target="_blank" rel="noreferrer" download>

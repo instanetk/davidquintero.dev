@@ -706,7 +706,7 @@ h2 {
 .section__fullstack {
   /* border: 1px solid yellow; */
   display: flex;
-  height: 100vh;
+  height: 85vh;
   justify-content: center;
 }
 
@@ -734,7 +734,7 @@ h2 {
   background-size: cover;
   background-position: 50% 80%;
   background-size: 200%;
-  height: 100vh;
+  height: 85vh;
   /* border: 1px solid purple; */
   z-index: -20;
   margin-top: -55rem;
@@ -968,7 +968,8 @@ h2 {
 }
 
 .section__mission-control--middle h2 {
-  /* min-height: 8rem; */
+  min-height: 5rem;
+  font-size: 2rem;
   /* border: 1px solid red; */
 }
 
@@ -978,6 +979,10 @@ h2 {
   background-position: 50% 50%;
   background-size: 50%;
   height: 20vh;
+}
+
+.mission-control--end {
+  /* margin-top: -1rem; */
 }
 
 .mission-control--text a {
@@ -1014,6 +1019,12 @@ h2 {
     align-items: center;
     column-gap: 2rem;
     /* border: 1px solid red; */
+  }
+
+  .section__mission-control--middle h2 {
+    min-height: 5rem;
+    font-size: 2.8rem;
+    /* border: 1px solid greenyellow; */
   }
 
   .mission-control {
