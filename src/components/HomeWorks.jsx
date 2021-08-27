@@ -23,15 +23,15 @@ const HomeWorks = ({ state }) => {
           addresses.
         </p>
         <p>
-          On the backend it is powered by Express and MongoDB. It features an admin dashboard providing real-time count
+          On the backend it is powered by <span className="text--bold">Express</span> and <span className="text--bold">MongoDB</span>. It features an admin dashboard providing real-time count
           of online users and other events by leveraging <span className="text--bold">Socket.IO</span> and MongoDB's{' '}
           <span className="text--bold">ChangeStream</span> access to real-time data changes.
         </p>
         <p>Detailed description of user stories are available in its GitHub repositories.</p>
         <div className="launch-container">
           <a href="https://homeworks.davidquintero.dev" className="launch-app" target="_blank" rel="noreferrer">
-            Launch App <span className="launch-app-rocket">🚀</span>
-          </a>
+            Launch App <span className="launch-app-rocket"></span>
+          </a> 
         </div>
         <div className="homeworks-repos">
           <Tippy content="GitHub Repo" placement="bottom">

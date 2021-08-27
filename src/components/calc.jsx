@@ -17,7 +17,7 @@ const Calc = ({ state }) => {
         <h2>{playTypeWriter ? <TypeWriter text="React Calculator" /> : null}</h2>
         <p>This component is comprised of two major concepts: logic and UI.</p>
         <p>
-          The logic is of course the functionality of a calculator. Performing the operations, keeping track of app
+          The logic covers the functionality of the calculator. Performing the operations, keeping track of app
           states, accounting for edge cases, handling errors, etc. This is all accomplished with JavaScript and it
           serves the purpose of applying key computer science concepts in programming.
         </p>

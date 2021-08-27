@@ -14,6 +14,7 @@ import Figma from '../svg/stack/icons8-figma.svg';
 import Docker from '../svg/stack/icons8-docker.svg';
 import npm from '../svg/stack/icons8-npm.svg';
 import TailwindCSS from '../svg/stack/tailwind-css-seeklogo.com.svg';
+import wave from '../images/wave.png';
 
 const Skills = ({ state }) => {
   let playTypeWriter;
@@ -30,7 +31,7 @@ const Skills = ({ state }) => {
         <div className="section__skills--middle">
           <div className="text">
             <h2>
-              Hello...<span className="wave">👋🏻</span>
+              Hello...<span className="wave"><img src={wave} alt="" aria-label="hand wave emoji" /></span>
             </h2>
             <p className="text--skills">
               {playTypeWriter ? <TypeWriter text="I am an emerging designer and full stack web developer" /> : null}
